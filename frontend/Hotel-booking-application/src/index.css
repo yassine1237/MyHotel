@@ -1,0 +1,213 @@
+body {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+}
+
+.card {
+  opacity: 0.95;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 🌐 Navigation Bar */
+.navbar {
+  padding: 0;
+  background-color: #ffffff !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding: 1em;
+  font-weight: 500;
+  color: #1c1c1c;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #b89140; 
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background-color: #b89140; /* elegant gold underline */
+  width: 0;
+  margin: 0 auto;
+  height: 3px;
+  transition: all 0.4s ease;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+  color: #1c1c1c;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    margin: 0 1em;
+  }
+}
+
+
+.btn-hotel {
+  background-color: #b89140; /* gold */
+  color: #fff;
+  border: none;
+  transition: all 0.4s ease;
+  border-radius: 5px;
+}
+
+.btn-hotel:hover {
+  background-color: #a07c2b; /* darker gold */
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.hotel-color {
+  color: #b89140; /* main gold tone */
+}
+
+.room-price {
+  color: #b89140;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  font-weight: 600;
+}
+
+/* 🖼 Parallax Section */
+.parallax {
+  background-image: url("./assets/images/in.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-top: 50px;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.animated-texts h1 {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.animated-texts h4 {
+  animation: fadeInUp 1.2s ease-in-out;
+  font-weight: 300;
+}
+
+/* ✨ Header Banner */
+.header-banner {
+  background-image: url("./assets/images/out.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 80vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.overlay-content h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #f1f1f1;
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .overlay-content h1 {
+    font-size: 1.4rem;
+  }
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+footer {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+footer .hotel-color {
+  color: #b89140;
+  font-weight: 600;
+}

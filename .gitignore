@@ -1,0 +1,23 @@
+# Node
+frontend/Hotel-booking-application/node_modules/
+frontend/Hotel-booking-application/dist/
+frontend/Hotel-booking-application/.vite/
+frontend/Hotel-booking-application/.env.local
+frontend/Hotel-booking-application/.env
+frontend/Hotel-booking-application/npm-debug.log*
+frontend/Hotel-booking-application/yarn-error.log*
+
+# Java / Spring Boot
+backend/HotelBookingApplication/target/
+backend/HotelBookingApplication/*.log
+backend/HotelBookingApplication/.env
+backend/HotelBookingApplication/.DS_Store
+
+# IDE / OS
+.vscode/
+.idea/
+*.iml
+*.class
+*.swp
+Thumbs.db
+.DS_Store
